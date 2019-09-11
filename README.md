@@ -1,6 +1,6 @@
 # Backex
 
-**TODO: Add description**
+Backex is extensible library for retry and bockoff of function calls
 
 ## Installation
 

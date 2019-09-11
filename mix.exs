@@ -8,6 +8,8 @@ defmodule Backex.MixProject do
       elixir: "~> 1.9",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
+      description: "Simple extensible retry/backoff library",
+      package: package(),
       deps: deps()
     ]
   end
@@ -16,6 +18,14 @@ defmodule Backex.MixProject do
   def application do
     [
       extra_applications: [:logger]
+    ]
+  end
+
+  defp package do
+    [
+      maintainers: ["tino415"],
+      licenses: ["MIT"],
+      links: %{GitHub: "https://github.com/tino415/backex"}
     ]
   end
 
